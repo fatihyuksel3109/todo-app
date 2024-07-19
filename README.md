@@ -2,6 +2,8 @@
 
 A simple and interactive To-Do application that allows users to manage tasks, add comments, and more. This app is built with plain HTML, CSS, and JavaScript.
 
+Check the app here : https://fatihyuksel3109.github.io/todo-app/
+
 ## Features
 
 - **Add To-Dos**: Users can add new tasks to the list.
