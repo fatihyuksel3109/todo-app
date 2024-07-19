@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="profile" style="display: none;">
+            <img src="https://as1.ftcdn.net/v2/jpg/03/81/60/06/1000_F_381600693_JT5mluWhADxJU7GtzYvHgkFI7Ecl8iqI.jpg" alt="Profile Picture" class="profile-pic">
+            <div id="profile-name"></div>
+        </div>
+        <h1>To-Do List</h1>
+        <div id="auth">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <button class="login" onclick="login()">Login</button>
+        </div>
+        <div id="todo-container" style="display: none;">
+            <input type="text" id="new-todo" placeholder="New To-Do">
+            <button class="add" onclick="addTodo()">Add To-Do</button>
+            <ul id="todo-list"></ul>
+            <button class="logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    
+    <!-- Modal for Comments -->
+    <div id="comment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Comments</h2>
+            <ul id="comment-list"></ul>
+            <textarea id="new-comment" placeholder="Add a comment..."></textarea>
+            <button class="add-comment" onclick="addComment()">Add Comment</button>
+            <button class="save-comment" onclick="saveComment()">Save Comment</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
